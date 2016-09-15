@@ -8,9 +8,9 @@ module.exports = webpackValidator({
         context: resolve('./scripts'),  
          entry: './main.js',
           output: { 
-            path: resolve('dist'),
-            publicPath: '/dist/',
-            filename: 'bundle.js',
+            //path: resolve('dist'),
+           // publicPath: '/dist/',
+            filename: './scripts/bundle.js',
             pathinfo :true,
           },
           ///Change eval to source-map for production
@@ -35,7 +35,7 @@ module.exports = webpackValidator({
                 },
         
             plugins: [
-            //new OfflinePlugin()
+            new OfflinePlugin()
             ]
 });
 /*{

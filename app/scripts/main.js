@@ -22,9 +22,9 @@
 (function () {
   'use strict';
   $("#skrollr-body").css("background","green");
-  //require('../node_modules/offline-plugin/runtime').install();
+  require('../node_modules/offline-plugin/runtime').install();
 
-/* if ('serviceWorker' in navigator) {
+ if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registration) {
     
     document.querySelector('#status').textContent = 'succeeded';
@@ -38,7 +38,7 @@
   aElement.href = 'http://www.chromium.org/blink/serviceworker/service-worker-faq';
   aElement.textContent = 'unavailable';
   document.querySelector('#status').appendChild(aElement);
-}*/
+}
   
   var querySelector = document.querySelector.bind(document);
 
