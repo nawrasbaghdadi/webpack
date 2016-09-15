@@ -18,10 +18,27 @@
  *
  */
  var skrollr = require('./skrollr.js');
+  require('../styles/main.css');
 (function () {
   'use strict';
   $("#skrollr-body").css("background","green");
+  //require('../node_modules/offline-plugin/runtime').install();
 
+/* if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js', {scope: './'}).then(function(registration) {
+    
+    document.querySelector('#status').textContent = 'succeeded';
+  }).catch(function(error) {
+    console.log('ersror');
+    document.querySelector('#status').textContent = error;
+  });
+} else {
+  // The current browser doesn't support service workers.
+  var aElement = document.createElement('a');
+  aElement.href = 'http://www.chromium.org/blink/serviceworker/service-worker-faq';
+  aElement.textContent = 'unavailable';
+  document.querySelector('#status').appendChild(aElement);
+}*/
   
   var querySelector = document.querySelector.bind(document);
 
