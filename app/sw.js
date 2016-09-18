@@ -10,7 +10,7 @@ var __wpo = {
     "e57ff6179e74459457ad06e6c5004ea9": "././scripts/bundle.js"
   },
   "strategy": "all",
-  "version": "9/15/2016, 4:47:56 PM",
+  "version": "9/18/2016, 5:41:44 PM",
   "name": "webpack-offline",
   "relativePaths": true
 };
